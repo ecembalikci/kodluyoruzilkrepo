@@ -1,0 +1,177 @@
+<!-- Emmet harika! -->
+<!--
++ kardeş öğe
+> içinde öğe
+^ yukarı çık ve öğe oluştur
+* çarp
+lorem anlamsız kelimeler
+lorem4 4 kelimelik lorem
+. class
+# id
+$ artan sayıları kendi yazar -->
+
+<!-- h1+p+p+p+p+h2+h3 -->
+<h1></h1>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<h2></h2>
+<h3></h3>
+
+<!-- h1+p*4+h2+h3+p*4 -->
+
+<h1></h1>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<h2></h2>
+<h3></h3>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+<!-- ul>li*5 -->
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<!-- ul>li*3^p -->
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<p></p>
+
+<!-- ul>li*3>lorem1^^p*3>lorem2^h2>lorem1 -->
+<ul>
+    <li>Lorem.</li>
+    <li>Eligendi.</li>
+    <li>Non.</li>
+</ul>
+<p>Lorem, ipsum.</p>
+<p>Perspiciatis, voluptatibus?</p>
+<p>Architecto, enim!</p>
+<h2>Lorem.</h2>
+
+<!-- h3.deneme>lorem1 -->
+<h3 class="deneme">Lorem.</h3>
+
+<!-- h3#idName>lorem1 -->
+<h3 id="idName">Lorem.</h3>
+
+<!-- h3.deneme#idName>lorem1 -->
+<h3 class="deneme" id="idName">Lorem.</h3>
+
+
+
+
+<!-- .buDaNe -->
+<div class="buDaNe"></div>
+
+<!-- ul>li.tepki -->
+<ul>
+    <li class="tepki"></li>
+</ul>
+
+<!-- ul>.tepki -->
+<ul>
+    <li class="tepki"></li>
+</ul>
+
+<!-- you will probably use this one as  -->
+<!-- ul>.text-blue*3>lorem1 -->
+<ul>
+    <li class="text-blue">Lorem.</li>
+    <li class="text-blue">Reiciendis!</li>
+    <li class="text-blue">Quasi.</li>
+</ul>
+
+<!-- ul>li#idNo$*3 -->
+<ul>
+    <li id="idNo1"></li>
+    <li id="idNo2"></li>
+    <li id="idNo3"></li>
+</ul>
+
+<!-- picsum.photos random image getirir-->
+
+<a href="https://picsum.photos" target="_blank">
+    <img src="img.png" alt="kodluyoruz repo" title="repo ss">
+</a>
+
+<!-- map ve area
+Resimlerinize hyperlink atamanız durumunda resmin tüm alanı link alanı haline dönüşecektir.
+Resmin herhangi bir yerine tıklanılması durumunda resim sizi tanımlanan bağlantıya gönderecektir.
+<img> etiketleri için kullanılan <map> ve <area> etiketleri ile resmin içindeki koordinatlarla 
+belirlediğimiz bir alanı sadece link haline getirebiliriz. Eklediğimiz <area> etiketi kadar belirlenen 
+alanı bir resim üzerinden birçok bağlantıya link verebiliriz.
+
+Örneğin Instagram'da bazı satıcılarda gördüğünüz bir insan fotoğraf üzerinde pantolon ve ayakkabının
+ürün linklerini ayrı ayrı vermek isterseniz kullanabilirsiniz. -->
+
+<html>
+<body>
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+ <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+ <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+ <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+</body>
+</html> 
+
+
+<!-- picture tagi ekran boyutlarına göre birden çok source kulllanmamızı sağlar bu sayede ekran boyutu değiştikçe farklı image'leri kullanabilirsiniz.
+
+Örnek: Burada ekran genişliğinin 800 pikselden küçük olduğu durumlarda başka diğer koşullarda ise başka bir görsel kullanılacak. -->
+
+<picture>
+    <source srcset="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png" media="(min-width: 800px)">
+    
+    <img src="/media/cc0-images/painted-hand-298-332.jpg" alt="" />
+</picture>
+
+
+<!-- başka sayfalara gitmek -->
+<ul>
+    <li>
+        <a href="https://kodluyoruz.org" target="_blank">
+            yeni sekmede kodluyoruza gider
+            </a>
+    </li>
+    <li>
+        <a href="iletisim.html">
+            iletişim sayfasına gider
+        </a>
+    </li>
+    <li>
+        <a href="#end">
+            Scroll to end</a>
+    </li>
+    <li>
+        <a href="mailto:ecembalikci@hotmail.com">
+            Send mail
+        </a>
+    </li>
+    <li>
+        <a href="tel:05554442563">
+            Call
+        </a>
+    </li>
+</ul>
+
+
+
+<h2 id="end">End of the page</h2>
+<p>Lorem.</p>
+
+
