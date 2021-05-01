@@ -1,6 +1,6 @@
 # Kodluyoruz First Repo
 This repo is the first repository that I created during my  [Kodluyoruz](https://www.kodluyoruz.org/) Front-End education. It includes one README file and one index.html .
-
+![](img.png)
 
 ## Installation
 
